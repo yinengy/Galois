@@ -47,6 +47,7 @@ static void printString(bool error, bool newline, const std::string& prefix,
 }
 
 void galois::gDebugStr(const std::string& s) {
+  x;
   static bool skip = galois::substrate::EnvCheck("GALOIS_DEBUG_SKIP");
   if (skip)
     return;
